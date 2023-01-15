@@ -11,6 +11,108 @@
     <link rel="manifest" href="site.webmanifest">
 </head>
 <body>
-    
+    <!-- TradingView Widget: OIL_CRUDE -->
+    <div id="oil_crude" class="tradingview-widget-container"></div>
+    <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+    <script type="text/javascript">
+        new TradingView.widget(
+        {
+            "autosize": true,
+            "symbol": "CAPITALCOM:OIL_CRUDE",
+            "interval": "5",
+            "timezone": "Etc/UTC",
+            "theme": "dark",
+            "style": "1",
+            "locale": "in",
+            "toolbar_bg": "#f1f3f6",
+            "enable_publishing": false,
+            "hide_top_toolbar": true,
+            "save_image": false,
+            "studies": [
+              "MACD@tv-basicstudies",
+              "MAExp@tv-basicstudies"
+            ],
+            "container_id": "oil_crude"
+        }
+        );
+    </script>
+
+    <!-- TradingView Widget: NATURALGAS -->
+    <div id="naturalgas" class="tradingview-widget-container"></div>
+    <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+    <script type="text/javascript">
+        new TradingView.widget(
+        {
+            "autosize": true,
+            "symbol": "CAPITALCOM:NATURALGAS",
+            "interval": "5",
+            "timezone": "Etc/UTC",
+            "theme": "dark",
+            "style": "1",
+            "locale": "in",
+            "toolbar_bg": "#f1f3f6",
+            "enable_publishing": false,
+            "hide_top_toolbar": true,
+            "save_image": false,
+            "studies": [
+              "MACD@tv-basicstudies",
+              "MAExp@tv-basicstudies"
+            ],
+            "container_id": "naturalgas"
+        }
+        );
+    </script>
+
+    <!-- TradingView Widget: GBPUSD -->
+    <div id="gbpusd" class="tradingview-widget-container"></div>
+    <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+    <script type="text/javascript">
+        new TradingView.widget(
+        {
+            "autosize": true,
+            "symbol": "CAPITALCOM:GBPUSD",
+            "interval": "5",
+            "timezone": "Etc/UTC",
+            "theme": "dark",
+            "style": "1",
+            "locale": "in",
+            "toolbar_bg": "#f1f3f6",
+            "enable_publishing": false,
+            "hide_top_toolbar": true,
+            "save_image": false,
+            "studies": [
+              "MACD@tv-basicstudies",
+              "MAExp@tv-basicstudies"
+            ],
+            "container_id": "gbpusd"
+        }
+        );
+    </script>
+
+    <!-- TradingView Widget: USDJPY -->
+    <div id="usdjpy" class="tradingview-widget-container"></div>
+    <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+    <script type="text/javascript">
+        new TradingView.widget(
+        {
+            "autosize": true,
+            "symbol": "CAPITALCOM:USDJPY",
+            "interval": "5",
+            "timezone": "Etc/UTC",
+            "theme": "dark",
+            "style": "1",
+            "locale": "in",
+            "toolbar_bg": "#f1f3f6",
+            "enable_publishing": false,
+            "hide_top_toolbar": true,
+            "save_image": false,
+            "studies": [
+              "MACD@tv-basicstudies",
+              "MAExp@tv-basicstudies"
+            ],
+            "container_id": "usdjpy"
+        }
+        );
+    </script>
 </body>
 </html>
