@@ -9,10 +9,22 @@
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
     <link rel="manifest" href="site.webmanifest">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .tradingview-widget-container {
+            height: 50vh;
+            width: 50%;
+            position: fixed;
+        }
+    </style>
 </head>
-<body>
+<body style="background-color: #000000;">
+
     <!-- TradingView Widget: OIL_CRUDE -->
-    <div id="oil_crude" class="tradingview-widget-container"></div>
+    <div id="oil_crude" class="tradingview-widget-container" style="top: 0; left: 0;"></div>
     <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
     <script type="text/javascript">
         new TradingView.widget(
@@ -38,7 +50,7 @@
     </script>
 
     <!-- TradingView Widget: NATURALGAS -->
-    <div id="naturalgas" class="tradingview-widget-container"></div>
+    <div id="naturalgas" class="tradingview-widget-container" style="left: 0; bottom: 0;"></div>
     <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
     <script type="text/javascript">
         new TradingView.widget(
@@ -64,7 +76,7 @@
     </script>
 
     <!-- TradingView Widget: GBPUSD -->
-    <div id="gbpusd" class="tradingview-widget-container"></div>
+    <div id="gbpusd" class="tradingview-widget-container" style="top: 0; right: 0;"></div>
     <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
     <script type="text/javascript">
         new TradingView.widget(
@@ -90,7 +102,7 @@
     </script>
 
     <!-- TradingView Widget: USDJPY -->
-    <div id="usdjpy" class="tradingview-widget-container"></div>
+    <div id="usdjpy" class="tradingview-widget-container" style="right: 0; bottom: 0;"></div>
     <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
     <script type="text/javascript">
         new TradingView.widget(
@@ -114,5 +126,6 @@
         }
         );
     </script>
+
 </body>
 </html>
