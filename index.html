@@ -31,7 +31,7 @@
         {
             "autosize": true,
             "symbol": "CAPITALCOM:OIL_CRUDE",
-            "interval": "5",
+            "interval": "1",
             "timezone": "Asia/Kolkata",
             "theme": "dark",
             "style": "1",
@@ -57,7 +57,7 @@
         {
             "autosize": true,
             "symbol": "CAPITALCOM:NATURALGAS",
-            "interval": "5",
+            "interval": "1",
             "timezone": "Asia/Kolkata",
             "theme": "dark",
             "style": "1",
@@ -75,15 +75,41 @@
         );
     </script>
 
+    <!-- TradingView Widget: EURUSD -->
+    <div id="eurusd" class="tradingview-widget-container" style="left: 0; bottom: 0;"></div>
+    <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+    <script type="text/javascript">
+        new TradingView.widget(
+        {
+            "autosize": true,
+            "symbol": "CAPITALCOM:EURUSD",
+            "interval": "1",
+            "timezone": "Asia/Kolkata",
+            "theme": "dark",
+            "style": "1",
+            "locale": "in",
+            "toolbar_bg": "#f1f3f6",
+            "enable_publishing": false,
+            "hide_top_toolbar": true,
+            "save_image": false,
+            "studies": [
+              "MAExp@tv-basicstudies",
+              "MACD@tv-basicstudies"
+            ],
+            "container_id": "eurusd"
+        }
+        );
+    </script>
+
     <!-- TradingView Widget: GBPUSD -->
-    <div id="gbpusd" class="tradingview-widget-container" style="left: 0; bottom: 0;"></div>
+    <div id="gbpusd" class="tradingview-widget-container" style="right: 0; bottom: 0;"></div>
     <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
     <script type="text/javascript">
         new TradingView.widget(
         {
             "autosize": true,
             "symbol": "CAPITALCOM:GBPUSD",
-            "interval": "5",
+            "interval": "1",
             "timezone": "Asia/Kolkata",
             "theme": "dark",
             "style": "1",
@@ -97,32 +123,6 @@
               "MACD@tv-basicstudies"
             ],
             "container_id": "gbpusd"
-        }
-        );
-    </script>
-
-    <!-- TradingView Widget: USDJPY -->
-    <div id="usdjpy" class="tradingview-widget-container" style="right: 0; bottom: 0;"></div>
-    <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
-    <script type="text/javascript">
-        new TradingView.widget(
-        {
-            "autosize": true,
-            "symbol": "CAPITALCOM:USDJPY",
-            "interval": "5",
-            "timezone": "Asia/Kolkata",
-            "theme": "dark",
-            "style": "1",
-            "locale": "in",
-            "toolbar_bg": "#f1f3f6",
-            "enable_publishing": false,
-            "hide_top_toolbar": true,
-            "save_image": false,
-            "studies": [
-              "MAExp@tv-basicstudies",
-              "MACD@tv-basicstudies"
-            ],
-            "container_id": "usdjpy"
         }
         );
     </script>
