@@ -65,29 +65,8 @@
         );
     </script>
 
-    <!-- TradingView Widget: EURUSD -->
-    <div id="eurusd" class="tradingview-widget-container" style="left: 0; bottom: 0;"></div>
-    <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
-    <script type="text/javascript">
-        new TradingView.widget(
-        {
-            "autosize": true,
-            "symbol": "CAPITALCOM:EURUSD",
-            "interval": "1",
-            "timezone": "Asia/Kolkata",
-            "theme": "dark",
-            "style": "1",
-            "locale": "in",
-            "toolbar_bg": "#f1f3f6",
-            "enable_publishing": false,
-            "hide_top_toolbar": true,
-            "container_id": "eurusd"
-        }
-        );
-    </script>
-
     <!-- TradingView Widget: GBPUSD -->
-    <div id="gbpusd" class="tradingview-widget-container" style="right: 0; bottom: 0;"></div>
+    <div id="gbpusd" class="tradingview-widget-container" style="left: 0; bottom: 0;"></div>
     <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
     <script type="text/javascript">
         new TradingView.widget(
@@ -103,6 +82,27 @@
             "enable_publishing": false,
             "hide_top_toolbar": true,
             "container_id": "gbpusd"
+        }
+        );
+    </script>
+
+    <!-- TradingView Widget: USDJPY -->
+    <div id="usdjpy" class="tradingview-widget-container" style="right: 0; bottom: 0;"></div>
+    <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+    <script type="text/javascript">
+        new TradingView.widget(
+        {
+            "autosize": true,
+            "symbol": "CAPITALCOM:USDJPY",
+            "interval": "1",
+            "timezone": "Asia/Kolkata",
+            "theme": "dark",
+            "style": "1",
+            "locale": "in",
+            "toolbar_bg": "#f1f3f6",
+            "enable_publishing": false,
+            "hide_top_toolbar": true,
+            "container_id": "usdjpy"
         }
         );
     </script>
